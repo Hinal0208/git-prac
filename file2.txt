@@ -1,0 +1,15 @@
+(Merge)
+git checkout feature1
+touch file2.txt
+git add file2.txt
+git branch
+git commit -m 'second commit'
+git status
+git push -u origin feature1
+git checkout feature2
+touch file3.txt
+git commit -m 'third commit'
+git push -mu origin feature2
+git merge feature1
+git push -u origin feature2
+git checkout master
